@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<div class="split left">
+    <div class="centered">
+
+            <br>
+    <br>
+    <br>
+
+        <h2> This is in for page</h2>
+
+        {% if hoods %}
+
+        {% for hood in hoods %}
+
+
+        {{hood.name}}
+
+
+        {% endfor %}
+
+
+        {% endif %}
+
+    </div>
+
+</div>
+
+</div>
+{% endblock %}

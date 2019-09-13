@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+
+<div class="col-6 col-md-4" style="text-align: center">
+<h2>Checkin</h2>
+
+<form action = "/neighbors/show/"method="post">
+    <h2> This is checkin page</h2>
+    <!-- {% csrf_token %}
+    {{form|crispy}}
+
+    <button type="submit" class="btn btn-primary">Login</button>
+
+    <p>Dont have an account? Sign up <span>here</span></p> -->
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <input placeholder ="name" type="text" id="username" name="username"> <br>
+    <input placeholder ="password" type="text" id="userimage" name="userimage"><br>
+    <input placeholder ="long" type="text" id="long" name="long"><br>
+    <input placeholder ="lat" type="text" id="lat" name="lat"><br>
+    <input type="submit" value="Submit">
+
+
+</form>
+</div>
+    </div>
+  
+    
+{% endblock %}

@@ -1,47 +1,53 @@
 {% load bootstrap4 %}
-{% load static%}
+{% load static %}
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <link rel="icon" href="../static/images/logo.png" />
-  {% if title %}
-  <title>Neighborhood-watch</title>
-  {% else %}
-  <link rel="icon" href="../static/images/logo.png" />
-  <title>Neighborhood-watch</title>
-  {% endif %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block head %}
 
-  {% block styles %}
-  {% bootstrap_css %}
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"></script>
-  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
-  {% endblock %}
+      {% if title %}
+        <title> Neighborhood - {{title}}</title>
+          {% else %}
+        <title> Neighborhood </title>
+      {% endif %}
 
+    {% endblock %}
+
+
+    
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{%static '/css/base.css'%}" type="text/css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="styleshhet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    {% endblock %}
 </head>
-
 <body>
-  {% include "navbar.html" %}
-  {% block content %} {%endblock%}
+    {% include 'neighbors/navbar.html' %}
 
-  {% block scripts %}
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  {% bootstrap_javascript %}
-  {% endblock %}
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script src="{% static 'js/hood.js' %}"></script>
-  {% block javascript %}
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js">
-  </script>
-  <script src="https://use.fontawesome.com/191e478c5e.js"></script>
-  {% endblock %}
+    {% block content %}
+   
+
+
+
+    {% endblock %}
+    {% include 'neighbors/footer.html' %}
+
+    {% block scripts %}
+    {% bootstrap_javascript %}
+    {% load static %}   
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    {% endblock scripts %}
+
 </body>
-
 </html>

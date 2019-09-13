@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<br>
+
+
+<div class="container">
+    <br>
+    <h1 class="text-center pt-3"> Hey {{user.username}}, Select your hood!</h1>
+    <br/>
+    <br/>
+    <hr>
+    <div class="container" style="text-align: center ">
+            <button type="button" class="btn btn-outline-primary">Add a neighborhood </button>
+    </div>
+    <br>
+
+    
+    <div class="album" style="align-content:stretch">
+            <div class="container" style="text-align: center">
+                <div class="row">
+                {% if all_neighbors %}
+                {% for hood in all_neighbors %}
+                <div class="card bg-light mb-3" style="max-width: 20rem;">
+
+                <div class="card-header"> {{hood.name}}</div>
+                <div class="card-body">
+                <h6 class="card-title">Address:{{hood.address}}</h6>
+                <p class="card-text">City:{{hood.city}}</p>
+
+                <a href="{{hood.id}}"class="btn btn-outline-primary">Checkin</a>
+                </div>
+                
+                </div>
+                {% endfor %}
+                {% endif %} 
+                </div>   
+                  
+            </div>
+    </div>
+            
+
+
+{% endblock %}
