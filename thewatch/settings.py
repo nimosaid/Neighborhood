@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'neighbors',
     'bootstrap4',
     'crispy_forms'
+
 ]
 
 MIDDLEWARE = [

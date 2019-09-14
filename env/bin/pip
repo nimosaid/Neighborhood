@@ -1,4 +1,5 @@
-#!/home/nimo/Documents/Moringa-django-projects/Neighborhood/env/bin/python3
+#!/home/bknngeno/Documents/moringa_core/Django/neighborhood/env/bin/python
+
 # -*- coding: utf-8 -*-
 import re
 import sys
