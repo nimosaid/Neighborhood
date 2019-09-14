@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from  accounts import views
-from django.contrib.auth.views import login,logout
+# from django.contrib.auth.views import logout
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -8,8 +8,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     
     # url(r'^$', views.home, name='home'),
-    url(r'^login/$', login, {'template_name':'accounts/login.html'}),
-    url(r'^logout/', views.logout_user, name = 'logout'),
+    # url(r'^login/$', login, {'template_name':'accounts/login.html'}),
+    # url(r'^logout/', views.logout_user, name = 'logout'),
     # url(r'^logout/$', logout, {'template_name': 'accounts/logout.html'}, name='logout'),
     url(r'^register/$',views.register, name = 'register'),
 #     url(r'^profile/$', views.user_profile, name = 'view_profile' ),

@@ -1,5 +1,4 @@
 """thewatch URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
 Examples:
@@ -16,11 +15,12 @@ Including another URLconf
 
 from django.conf.urls import url, include
 from django.contrib import admin
+from neighbors import urls
 # from django.contrib.gis import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^',include('neighbors.urls', namespace='neighbors')),
-    url(r'^accounts/',include('accounts.urls', namespace='accounts')),
+    url(r'^',include('neighbors.urls')),
+    url(r'^accounts/',include('accounts.urls')),
 
 ]
