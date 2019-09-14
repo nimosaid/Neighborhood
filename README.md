@@ -1,4 +1,4 @@
- Neib-hood
+ Neighborhood
 ===================
 ## Description
 This is  a web application that allows you to be in the loop about everything happening in your neighborhood. From contact information of different handyman to meeting announcements or even alerts.
@@ -28,7 +28,7 @@ This project should be able to work on different kind of platforms
 
 ### Cloning the repository
 ```bash
-git clone git@github.com:probantan/gallary.git&& cd personal-gallery
+git clone git@github.com:nimosaid/Neighborhood.git&& cd Neighborhood
 ```
 
 ### Creating a virtual environment
@@ -71,14 +71,14 @@ python manage.py runserver
 
 
 ### License
-Copyright (c) {year} **{Morings School}**
+Copyright (c) {2019} **{Morings School}**
 
 
 
 ## License
 MIT License
 ```
-Copyright (c) 2018 Protus Bantan
+Copyright (c) 2019 Nimo Said
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -97,5 +97,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Copyright (c) 2018 **Protus**
+Copyright (c) 2019 **Nimo Said*
 ```
