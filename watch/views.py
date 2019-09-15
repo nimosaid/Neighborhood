@@ -9,7 +9,7 @@ from .forms import BusinessForm,ProfileForm,HoodForm,PostForm,CommentForm
 
 def home(request):
     date = dt.date.today()
-    hud = NeighborHood.objects.all()
+    # hud = NeighborHood.objects.all()
     return render(request,'home.html',locals())
 
 def logout(request):
