@@ -71,7 +71,7 @@ python manage.py runserver
 
 
 ### License
-Copyright (c) {2019} **{Morings School}**
+Copyright (c) {2019} **{Moringa School}**
 
 
 

@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^$', neighbors_views.home, name = 'home'),
     url(r'^neighborhoods/$', neighbors_views.all_neighbors, name = 'all_neighbors'),
-    # url(r'^neighborhoods/(?P<pk>\d+)/$', neighbors_views.neighborhood_details, name = 'hood-details'),
+    url(r'^neighborhoods/(?P<pk>\d+)/$', neighbors_views.neighborhood_details, name = 'hood-details'),
     url(r'^neighborhoods/(?P<id>\d+)/$', neighbors_views.neighborhood_details, name = 'hood-details'),
 
 ]

@@ -90,5 +90,7 @@ def user_profile(request):
 def logout_user(request):
     logout(request)
     print('You have been logged out')
+    
     return redirect('neighbors:home')
+    
     
