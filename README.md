@@ -28,7 +28,7 @@ This project should be able to work on different kind of platforms
 
 ### Cloning the repository
 ```bash
-git clone git@github.com:probantan/gallary.git&& cd personal-gallery
+git clone git@github.com:nimosaid/Neighborhood.git&& cd Neighborhood
 ```
 
 ### Creating a virtual environment
